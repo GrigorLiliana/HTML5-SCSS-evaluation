@@ -1,0 +1,275 @@
+* {
+  box-sizing: content-box;
+  transition-duration: 0.3s;
+}
+*:not(input) {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  font-family: Arial, sans-serif;
+}
+
+/********header**********/
+
+header {
+  background-image: url(images/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 2rem 1rem 10rem;
+  color: white;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+header nav ul a:hover {
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+header h1 {
+  font-size: 20px;
+  margin-top: 130px;
+  font-weight: normal;
+}
+header h2 {
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight: normal;
+}
+header p {
+  font-size: 18px;
+  margin-top: 1rem;
+}
+#botao {
+  display: inline-block;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  background-color: #ff4e50;
+  padding: 10px 50px;
+  border-radius: 50px;
+  margin-top: 15px;
+}
+
+/************Sections********/
+
+main {
+  width: 90%;
+  text-align: center;
+}
+section {
+  text-align: center;
+}
+h3 {
+  color: #333333;
+  font-weight: normal;
+  font-size: 22px;
+  margin-top: 40px;
+}
+article {
+  color: white;
+  position: relative;
+  margin: 15px auto 10px;
+  text-align: left;
+  border-radius: 5px;
+  padding: 80px 20px 20px 20px;
+}
+#art1 {
+  background-image: url(images/step1desk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#art2 {
+  background-image: url(images/step2desk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#art3 {
+  background-image: url(images/step3desk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+span {
+  color: white;
+  background-color: #ff4e50;
+  border-radius: 50px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 5px 10px;
+}
+h4 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+h4 + p {
+  font-size: 14px;
+  color: #cccccc;
+  margin-top: 20px;
+}
+
+/**********section2*******/
+h3 + p {
+  font-size: 18px;
+  color: #333333;
+  margin-top: 20px;
+}
+#section2 input {
+  margin-top: 15px;
+  padding: 12px 100px 12px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+#section2 input::placeholder {
+  color: #999999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+#section2 button {
+  margin-top: 10px;
+  color: white;
+  background-color: #ff4e50;
+  padding: 12px 90px;
+  border-radius: 40px;
+  font-size: 14px;
+}
+/**********FOOTER************/
+footer {
+  margin-top: 40px;
+  border-top: 4px solid #ff4e50;
+  text-align: center;
+}
+h5 {
+  margin-top: 20px;
+  color: #ff4e50;
+  font-size: 16px;
+  font-weight: normal;
+}
+footer nav {
+  margin-top: 15px;
+  width: 80%;
+}
+footer nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+footer nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #333333;
+  font-size: 14px;
+  padding: 5px;
+}
+#just_me {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+}
+footer img {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  #break {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  header h1 {
+    margin-top: 0;
+  }
+  header h2 {
+    margin-top: 120px;
+    font-size: 52px;
+  }
+  header p {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  #botao {
+    margin-top: 30px;
+    padding: 10px 30px;
+  }
+  #section1 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  h3 {
+    margin-top: 100px;
+  }
+  article {
+    padding-top: 200px;
+    width: 25%;
+  }
+  #art2 {
+    padding-top: 250px;
+  }
+  #section2 input {
+    margin-top: 40px;
+    padding: 12px 50px 12px 12px;
+  }
+  #section2 button {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  footer {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 100px;
+    padding: 20px 20px 80px 40px;
+    display: flex;
+  }
+
+  footer nav ul {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer nav ul a {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+  #just_me {
+    margin-top: 15px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  #section1 {
+    width: 80%;
+  }
+  footer {
+    margin-top: 100px;
+    padding: 20px 100px 80px 100px;
+  }
+}
